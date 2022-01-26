@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZAjIkfzkmSy90bI9ECrHTrpYpCv9mD9kcOU/5h/nfftvYyW0ZU/CVRCkiPZmmvqwkTYCYobL8WPMy9eH1crE3g==",
+  "dgSpecHash": "iTKv5c92cQ8LdI9qeaBROYa/b34AR/JzqwH1ObH1m7yglIIbq0gQtN+GFQdT1RtE7HdcC6ofqnrNmbQ3mUSVWw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\emred\\Desktop\\ReCapProject\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\emred\\Source\\Repos\\Emreddegirmenci\\ReCapProject\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emred\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\emred\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
