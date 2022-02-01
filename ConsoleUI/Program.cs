@@ -11,41 +11,75 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            CarManager carManager = new CarManager(new EfCarDal());
-            foreach (var car in carManager.GetCarsByBrandId(1))
+            //CarTest1();
+            //ColorTest();
+            //BrandTest();
+
+        }
+
+        private static void BrandTest()
+        {
+            BrandManager brandManager = new BrandManager(new EfBrandDal());
+            foreach (var brand in brandManager.GetAll())
             {
-                Console.WriteLine(car.BrandId + " " + car.Description);
+                Console.WriteLine(brand.BrandName);
             }
-            foreach (var car in carManager.GetCarsByColorId(2))
-            {
-                Console.WriteLine(car.ColorId + " " + car.Description);
+            brandManager.Add(new Brand { BrandName = "Opel" });
+            brandManager.Update(new Brand { BrandId = 11, BrandName = "Mercedes" });
+            brandManager.Delete(new Brand { BrandId = 11, BrandName = "Mercedes" });
+        }
 
+        private static void ColorTest()
+        {
+            ColorManager colorManager = new ColorManager(new EfColorDal());
+            foreach (var color in colorManager.GetAll())
+            {
+                Console.WriteLine(color.ColorName);
             }
-
-            Console.WriteLine("********AddCars***********");
-
-            Car car1 = new Car
-            {
-                BrandId = 1,
-                ColorId = 1,
-                ModelYear = 2020,
-                DailyPrice = 0,
-                Description = "Alfa Romeo"
-            };
-
-            carManager.Add(car1);
-
-            Car car2 = new Car
-            {
-                BrandId = 1,
-                ColorId = 1,
-                ModelYear = 2005,
-                DailyPrice = 0,
-                Description = "a"
-            };
-
-            carManager.Add(car2);
-
+            colorManager.Add(new Color { ColorName = "Eflatun" });
+            colorManager.Update(new Color { ColorId = 11, ColorName = "Açık Mavi" });
+            colorManager.Delete(new Color { ColorId = 11, ColorName = "Açık Mavi" });
         }
     }
 }
+ 
+
+        //private static void CarTest1()
+        //{
+        //    CarManager carManager = new CarManager(new EfCarDal());
+        //    foreach (var car in carManager.GetCarsByBrandId(1))
+        //    {
+        //        Console.WriteLine(car.BrandId + " " + car.Description);
+        //    }
+        //    foreach (var car in carManager.GetCarsByColorId(2))
+        //    {
+        //        Console.WriteLine(car.ColorId + " " + car.Description);
+
+        //    }
+
+        //    Console.WriteLine("********AddCars***********");
+
+        //    Car car1 = new Car
+        //    {
+        //        BrandId = 1,
+        //        ColorId = 1,
+        //        ModelYear = 2020,
+        //        DailyPrice = 0,
+        //        Description = "Alfa Romeo"
+        //    };
+
+        //    carManager.Add(car1);
+
+        //    Car car2 = new Car
+        //    {
+        //        BrandId = 1,
+        //        ColorId = 1,
+        //        ModelYear = 2005,
+        //        DailyPrice = 0,
+        //        Description = "a"
+        //    };
+
+        //    carManager.Add(car2);
+        //}
+    
+

@@ -26,3 +26,5 @@ C:\Users\emred\Source\Repos\Emreddegirmenci\ReCapProject\Business\obj\Debug\nets
 C:\Users\emred\Source\Repos\Emreddegirmenci\ReCapProject\Business\obj\Debug\netstandard2.0\Business.csproj.CopyComplete
 C:\Users\emred\Source\Repos\Emreddegirmenci\ReCapProject\Business\obj\Debug\netstandard2.0\Business.dll
 C:\Users\emred\Source\Repos\Emreddegirmenci\ReCapProject\Business\obj\Debug\netstandard2.0\Business.pdb
+C:\Users\emred\source\repos\Emreddegirmenci\ReCapProject\Business\bin\Debug\netstandard2.0\Core.dll
+C:\Users\emred\source\repos\Emreddegirmenci\ReCapProject\Business\bin\Debug\netstandard2.0\Core.pdb
