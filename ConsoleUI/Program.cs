@@ -1,4 +1,5 @@
 ﻿using Business.Concrete;
+using Core.Utilities.Results;
 using DataAccess.Concrete;
 using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
@@ -11,6 +12,21 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
+            CarManager carManager = new CarManager(new EfCarDal());
+            var result = carManager.GetCarDetails();
+
+            if (result.Success == true)
+            {
+                foreach(var car in result.Data)
+                {
+                    Console.WriteLine(car.CarName + "/" + car.ColorName);
+                }
+            }
+            else
+            {
+                Console.WriteLine(result.Message);
+            }
+
             //BrandGetAllTest();
             //BrandGetByIdTest();
             //BrandAddTest();
@@ -52,13 +68,13 @@ namespace ConsoleUI
         private static void CarGetByIdTest()
         {
             CarManager carManager = new CarManager(new EfCarDal());
-            Console.WriteLine(carManager.GetById(5).Description);
+            Console.WriteLine(carManager.GetById(5));
         }
 
         private static void CarGetAllTest()
         {
             CarManager carManager = new CarManager(new EfCarDal());
-            foreach (var car in carManager.GetAll())
+            foreach (var car in carManager.GetAll().Data)
             {
                 Console.WriteLine(car.Description);
             }
@@ -90,13 +106,13 @@ namespace ConsoleUI
         {
             ColorManager colorManager = new ColorManager(new EfColorDal());
 
-            Console.WriteLine(colorManager.GetById(3).ColorName);
+            Console.WriteLine(colorManager.GetById(3));
         }
 
         private static void ColorGetAllTest()
         {
             ColorManager colorManager = new ColorManager(new EfColorDal());
-            foreach (var color in colorManager.GetAll())
+            foreach (var color in colorManager.GetAll().Data)
             {
                 Console.WriteLine(color.ColorName);
             }
@@ -124,13 +140,13 @@ namespace ConsoleUI
         {
             BrandManager brandManager = new BrandManager(new EfBrandDal());
 
-            Console.WriteLine(brandManager.GetById(2).BrandName);
+            Console.WriteLine(brandManager.GetById(2));
         }
 
         private static void BrandGetAllTest()
         {
             BrandManager brandManager = new BrandManager(new EfBrandDal());
-            foreach (var brand in brandManager.GetAll())
+            foreach (var brand in brandManager.GetAll().Data)
             {
                 Console.WriteLine(brand.BrandName);
             }
