@@ -12,20 +12,8 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            CarManager carManager = new CarManager(new EfCarDal());
-            var result = carManager.GetCarDetails();
-
-            if (result.Success == true)
-            {
-                foreach(var car in result.Data)
-                {
-                    Console.WriteLine(car.CarName + "/" + car.ColorName);
-                }
-            }
-            else
-            {
-                Console.WriteLine(result.Message);
-            }
+            //CustomerTest();
+            //RentalTest();
 
             //BrandGetAllTest();
             //BrandGetByIdTest();
@@ -44,7 +32,49 @@ namespace ConsoleUI
             //CarAddTest();
             //CarUpdateTest();
             //CarDeleteTest();
+            //GetCarDetailsTest();
 
+        }
+
+        private static void RentalTest()
+        {
+            RentalManager rentalManager = new RentalManager(new EfRentalDal());
+            Rental rental = new Rental { CarId = 2, CustomerId = 2, RentDate = DateTime.Today, ReturnDate = DateTime.Now };
+            var result = rentalManager.Add(rental);
+            if (result.Success == false)
+            {
+                Console.WriteLine(result.Message);
+            }
+            else
+            {
+                Console.WriteLine(result.Message);
+            }
+        }
+
+        private static void CustomerTest()
+        {
+            CustomerManager customerManager = new CustomerManager(new EfCustomerDal());
+            Customer customer = new Customer { UserId = 1, CompanyName = "Wissen" };
+            var result = customerManager.Add(customer);
+            Console.WriteLine(result.Message);
+        }
+
+        private static void GetCarDetailsTest()
+        {
+            CarManager carManager = new CarManager(new EfCarDal());
+            var result = carManager.GetCarDetails();
+
+            if (result.Success == true)
+            {
+                foreach (var car in result.Data)
+                {
+                    Console.WriteLine(car.CarName + "/" + car.ColorName);
+                }
+            }
+            else
+            {
+                Console.WriteLine(result.Message);
+            }
         }
 
         private static void CarDeleteTest()
