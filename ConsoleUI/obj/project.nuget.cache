@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Rz59A/GZpVyGmbZObaoL3RIVTbp9vNS8txZ/xq9sdJSljefm26zndm1KfnUmxT25Z00LieMIP5qSsQsJKjiO7Q==",
+  "dgSpecHash": "oK8pkTldhxmH+fIld0OH/R/3nSZlW2P/l2mUicqFdbXqzNW7HnY53mTJGNSySTMqyWbVe/YKhMiS6v8y6GQq9Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\emred\\source\\repos\\Emreddegirmenci\\ReCapProject\\ConsoleUI\\ConsoleUI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\emred\\.nuget\\packages\\autofac\\6.1.0\\autofac.6.1.0.nupkg.sha512",
+    "C:\\Users\\emred\\.nuget\\packages\\autofac.extras.dynamicproxy\\6.0.0\\autofac.extras.dynamicproxy.6.0.0.nupkg.sha512",
+    "C:\\Users\\emred\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\emred\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\emred\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "C:\\Users\\emred\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -52,6 +55,7 @@
     "C:\\Users\\emred\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Users\\emred\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
     "C:\\Users\\emred\\.nuget\\packages\\system.diagnostics.tools\\4.3.0\\system.diagnostics.tools.4.3.0.nupkg.sha512",
+    "C:\\Users\\emred\\.nuget\\packages\\system.diagnostics.tracesource\\4.3.0\\system.diagnostics.tracesource.4.3.0.nupkg.sha512",
     "C:\\Users\\emred\\.nuget\\packages\\system.diagnostics.tracing\\4.3.0\\system.diagnostics.tracing.4.3.0.nupkg.sha512",
     "C:\\Users\\emred\\.nuget\\packages\\system.dynamic.runtime\\4.3.0\\system.dynamic.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\emred\\.nuget\\packages\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",
