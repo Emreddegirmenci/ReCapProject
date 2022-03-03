@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace Business.Constants
@@ -43,6 +44,6 @@ namespace Business.Constants
         public static string CarImageUpdated = "Car Image Updated!";
         public static string CarImageDeleted = "Car Image Deleted!";
         public static string CarImageListed = "All car images have been listed!";
-
+        public static string AuthorizationDenied = "Yetkiniz yok";
     }
 }

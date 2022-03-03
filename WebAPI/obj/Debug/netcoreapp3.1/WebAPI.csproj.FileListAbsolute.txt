@@ -140,9 +140,10 @@ C:\Users\emred\source\repos\Emreddegirmenci\ReCapProject\WebAPI\bin\Debug\netcor
 C:\Users\emred\source\repos\Emreddegirmenci\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
 C:\Users\emred\source\repos\Emreddegirmenci\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Castle.Core.dll
 C:\Users\emred\source\repos\Emreddegirmenci\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll
-C:\Users\emred\source\repos\Emreddegirmenci\ReCapProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csproj.CoreCompileInputs.cache
-C:\Users\emred\source\repos\Emreddegirmenci\ReCapProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\emred\source\repos\Emreddegirmenci\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\FluentValidation.dll
 C:\Users\emred\source\repos\Emreddegirmenci\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
 C:\Users\emred\source\repos\Emreddegirmenci\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
 C:\Users\emred\source\repos\Emreddegirmenci\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\emred\source\repos\Emreddegirmenci\ReCapProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\emred\source\repos\Emreddegirmenci\ReCapProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\emred\source\repos\Emreddegirmenci\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll

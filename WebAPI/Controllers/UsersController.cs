@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Business.Abstract;
+using Core.Entities.Concrete;
 using Entities.Concrete;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -20,10 +21,21 @@ namespace WebAPI.Controllers
             _userService = userService;
         }
 
-        [HttpGet("getall")]
-        public ActionResult GetAll()
+        //[HttpGet("getall")]
+        //public ActionResult GetAll()
+        //{
+        //    var result = _userService.GetAll();
+        //    if (result.Success)
+        //    {
+        //        return Ok(result);
+        //    }
+        //    return BadRequest(result);
+        //}
+
+        [HttpGet("GetByUserEmail")]
+        public IActionResult GetByEmail(string email)
         {
-            var result = _userService.GetAll();
+            var result = _userService.GetByMail(email);
             if (result.Success)
             {
                 return Ok(result);
@@ -31,16 +43,29 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
 
-        [HttpGet("getbyid")]
-        public ActionResult GetById(int id)
+        [HttpGet("getclaims")]
+        public ActionResult GetClaims(User user)
         {
-            var result = _userService.GetById(id);
+            var result = _userService.GetClaims(user);
             if (result.Success)
             {
                 return Ok(result);
             }
             return BadRequest(result);
         }
+
+
+
+        //[HttpGet("getbyid")]
+        //public ActionResult GetById(int id)
+        //{
+        //    var result = _userService.GetById(id);
+        //    if (result.Success)
+        //    {
+        //        return Ok(result);
+        //    }
+        //    return BadRequest(result);
+        //}
 
         [HttpPost("add")]
         public ActionResult Add(User user)
