@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Business.Abstract;
 using Entities.Concrete;
@@ -23,8 +24,10 @@ namespace WebAPI.Controllers
         [HttpGet("getall")]
         public ActionResult GetAll()
         {
-            var result = _carService.GetAll();
-            if(result.Success)
+            Thread.Sleep(1000);
+            //var result = _carService.GetAll();
+            var result = _carService.GetCarDetails();
+            if (result.Success)
             {
                 return Ok(result);
             }

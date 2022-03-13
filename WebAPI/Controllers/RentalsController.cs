@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Business.Abstract;
 using Entities.Concrete;
@@ -23,7 +24,9 @@ namespace WebAPI.Controllers
         [HttpGet("getall")]
         public ActionResult GetAll()
         {
-            var result = _rentalService.GetAll();
+            Thread.Sleep(1000);
+            //var result = _rentalService.GetAll();
+            var result = _rentalService.GetListRentalsDetail();
             if (result.Success)
             {
                 return Ok(result);
